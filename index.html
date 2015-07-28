@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>{% if is_home %} {{ site.author }} {% elif is_post %} {{ post.title }} {% elif is_link %} {{ link.title }} {% elif is_tag %} {{ tag }} {% elif is_page %} {{ page.title }} {% endif %} | {{ site.name }}</title>
+
+    {{ header_meta }}
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{{ static('fonts/symbolset/ss-social-circle.css') }}">
+    <link href="{{ assets('css/timeline.css') }}" rel="stylesheet" />
+
+    <!-- standard google analytics -->
+    {% if site.analytics %}
+    <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.analytics }}']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    {% endif %}
+
+    <!--
+    <style>
+        /**
+         * Your custom override CSS goes here. If you wanted to override the default link colour and hover state, you would do this:
+         *
+         *  a {
+         *      color: #333; /* Override the default colour with a not-quite-black that is easy on the eyes on white screens */
+         *  }
+         *
+         *  a:hover {
+         *      color: #545454; /* This will now change the hover state as well */
+         *  }
+         *
+         *  You can put anything you want to override in here, so be creative!
+         */
+    </style>
+    -->
+</head>
+<body>
+
+  {% if is_login %}
+
+    {{ login_form }}
+
+  {% else %}
+
+    <div class="container">
+        <header>
+            <div class="logo-nav">
+                <h1><a href="/">{{ site.name }}</a></h1>
+                <nav role="navigation" id="nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        {% if pages %}
+                        {% for page in pages %}
+                        <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="social-icons">
+                {% if site.twitter %}<a href="{{ site.twitter }}" title="Twitter" target="_blank" class="ss-icon">twitter</a>{% endif %}
+                {% if site.facebook %}<a href="{{ site.facebook }}" title="Facebook" target="_blank" class="ss-icon">facebook</a>{% endif %}
+                {% if site.googleplus %}<a href="{{ site.googleplus }}?rel=author?rel=author" rel="author" title="Google+" target="_blank" class="ss-icon">googleplus</a>{% endif %}
+                {% if site.linkedin %}<a href="{{ site.linkedin }}" title="Linkedin" target="_blank" class="ss-icon">linkedin</a>{% endif %}
+                <a href="{{ site.atom_url }}" title="RSS" target="_blank" class="ss-icon">rss</a>
+            </div>
+        </header>
+        <div role="main" class="main">
+            {% if is_home or is_tag %}
+            {% if is_tag %}
+            <h2>Tag: {{ tag }}</h2>
+            {% endif %}
+            <ul class="timeline">
+                {% if posts %}
+                {% for post in posts %}
+                <li>
+                    <article itemscope itemtype="http://schema.org/Article">
+                        <time class="time" datetime="{{ post.created_at }}"><span>Published by {{ site.author }}</span> <span>{{ post.created_at|format_date }}</span></time>
+                        <div class="bubble"></div>
+                        <div class="label">
+                            <div class="post-header">
+                                {% if post.photos %}
+                                {% for photo in post.photos %}
+                                {% if photo and loop.index == 1 %}
+                                <div class="image">
+                                    <a href="{{ post.permalink }}">
+                                        <img src="{{ photo.square_75 }}" alt="Featured Photo" />
+                                    </a>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                                {% endif %}
+                                <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+                            </div>
+                            <div class="post-content">
+                                {{ post.content }}
+
+                                {% if post.tags %}
+                                <div class="tags">
+                                    <h4>Tags</h4>
+                                    {{ post.tags|format_tags(delimiter=' ') }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                {% endfor %}
+                {% else %}
+                <li>
+                    <p class="no-posts"><em>Timeline empty :(</em></p>
+                </li>
+                {% endif %}
+            </ul>
+            <div class="pagination">
+                {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
+                {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
+            </div>
+            {% elif is_post %}
+            <article itemscope itemtype="http://schema.org/Article" class="post">
+                <time class="time" datetime="{{ post.created_at }}"><span>Published by {{ site.author }}</span> <span>{{ post.created_at|format_date }}</span></time>
+                <section class="content">
+                    <header>
+                        <h2>{{ post.title }}</h2>
+                    </header>
+                    <div class="post-content">
+                        {{ post.content }}
+                        {% if post.tags %}
+                        <div class="tags">
+                            <h4>Tags</h4>
+                            {{ post.tags|format_tags(delimiter=' ') }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% if site.disqus %}
+                    <hr />
+                    <section class="comments">
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                        var disqus_shortname = '{{ site.disqus }}';
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </section>
+                    {% endif %}
+                </section>
+            </article>
+            {% elif is_link %}
+            <article itemscope itemtype="http://schema.org/Article" class="post">
+                <time class="time" datetime="{{ link.created_at }}"><span>Published by {{ site.author }}</span> <span>{{ link.created_at|format_date }}</span></time>
+                <section class="content">
+                    <header>
+                        <h2>{{ link.title }}</h2>
+                    </header>
+                    <div class="post-content">
+                        {{ link.content }}
+                        <p class="link-url"><i class="icon-share"></i> <a href="{{ link.url }}">{{ link.url }}</a></p>
+                        {% if link.tags %}
+                        <div class="tags">
+                            <h4>Tags</h4>
+                            {{ link.tags|format_tags(delimiter=' ') }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% if site.disqus %}
+                    <hr />
+                    <section class="comments">
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                        var disqus_shortname = '{{ site.disqus }}';
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </section>
+                    {% endif %}
+                </section>
+            </article>
+            {% elif is_page %}
+            <article class="post">
+                <section class="content">
+                    <header>
+                        <h1>{{ page.title }}</h1>
+                    </header>
+                    <div class="post-content">
+                        {{ page.content }}
+                    </div>
+                </section>
+            </article>
+            {% endif %}
+        </div>
+
+        <footer>
+            <p class="left">All rights Reserved &copy; <a href="/">{{ site.name }}</a></p>
+            <p class="right">Powered by <a href="http://postach.io" target="_blank">Postach.io</a></p>
+        </footer>
+    </div>
+
+  {% endif %}
+
+  {{ footer_meta }}
+
+  <script type="text/javascript" src="{{ static('fonts/symbolset/ss-social.js') }}" /></script>
+  <script src="{{ assets('js/modernizr.custom.js') }}"></script>
+  <script src="{{ assets('js/main.min.js') }}"></script>
+
+</body>
+</html>
