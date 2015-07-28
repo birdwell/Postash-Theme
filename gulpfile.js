@@ -10,12 +10,15 @@ gulp.task('default', function() {
   
   // easier to read variable
   var themeName = 'timeline';
-  
-  // less
-  gulp.src('./assets/less/' + themeName + '.less')
-    .pipe(less({ paths: [path.join(__dirname, 'less', 'includes')]}))
-    .pipe(rename('style.css'))
-    .pipe(gulp.dest('./assets/css/'));
+
+  // // less
+  // gulp.src('./assets/less/' + themeName + '.less')
+  //   .pipe(less({ paths: [path.join(__dirname, 'less', 'includes')]}))
+  //   .pipe(rename('style.css'))
+  //   .pipe(gulp.dest('./assets/css/'));
+  gulp.src('./assets/less/**/*.less')
+  .pipe(less({ paths: [ path.join(__dirname, 'less', 'includes') ]}))
+  .pipe(gulp.dest('./assets/css/'));
 
   // uglify
   gulp.src('./assets/js/' + themeName + '.js')
