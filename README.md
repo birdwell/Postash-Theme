@@ -23,4 +23,4 @@ Run gulp to make sure all CSS and JavaScript files are the latest versions.
 gulp
 ```
 
-
+Authored by Josh Birdwell
