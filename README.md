@@ -1,4 +1,4 @@
-theme-expanse
+theme-timeline
 =============
 
 User Created Repo for Postach.io Timeline Theme. Fork this to use it as a boilerplate.
