@@ -8,5 +8,8 @@
     "gulp-rename": "~1.2.0",
     "gulp-uglify": "~0.3.1",
     "path": "~0.4.9"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0"
   }
 }
