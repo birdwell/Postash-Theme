@@ -71,7 +71,7 @@
 }
 .container > header #nav a {
   display: inherit;
-  color: #1abc9c;
+  color: #187319;
   font-weight: 700;
 }
 .container > header #nav a:hover {
@@ -244,7 +244,7 @@
     border-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #1abc9c;
+    border-bottom-color: #187319;
     border-left-color: transparent;
   }
   .timeline > li .bubble {
@@ -320,7 +320,7 @@
   padding: 0.625rem 15px;
   padding: 10px 0.9375rem;
   padding: 0.625rem 0.9375rem;
-  color: #1abc9c;
+  color: #187319;
 }
 .pagination .post-prev:hover,
 .pagination .post-next:hover {
@@ -405,7 +405,89 @@
   font-weight: 300;
   position: relative;
   border-radius: 5px;
-  /* The triangle */
+}
+.post .content header {
+  padding-bottom: 0;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 5px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #187319;
+  color: #ffffff;
+}
+.post .content header h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+.post .content header h2 a {
+  color: #ffffff;
+}
+.post .content header h2 a:hover {
+  color: #95a5a6;
+}
+.post .content a {
+  color: #187319;
+}
+.post .content a:hover {
+  color: #16a085;
+}
+.post .content .post-content {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.post .content .comments {
+  padding: 20px;
+  padding: 1.25rem;
+}
+.post .content .read-more {
+  color: #187319;
+}
+.post .content .read-more:hover {
+  color: #16a085;
+}
+.post .content .link-url {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+.post .content .tags h4 {
+  margin: 0;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+.post .content .tags a {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  padding: 3px;
+  padding: 0.1875rem;
+  background-color: #187319;
+  color: #ffffff;
+}
+.post .content .tags a:hover {
+  color: #2c3e50;
 }
 .post .content:before {
   content: '';
@@ -422,9 +504,16 @@
   border-color: transparent;
   border-top-color: transparent;
   border-right-color: transparent;
-  border-bottom-color: #1abc9c;
+  border-bottom-color: #187319;
   border-left-color: transparent;
   pointer-events: none;
+}
+.post img {
+  border-width: 3px;
+  border-width: 0.1875rem;
+  border-style: solid;
+  border-color: #ecf0f1;
+  border-radius: 5px;
 }
 .post .content header,
 .post .content .post-content {
@@ -577,7 +666,7 @@
   color: #000;
   font-size: 12px;
   padding: 10px;
-  background-color: #1abc9c;
+  background-color: #187319;
   border-radius: 7px;
   -moz-opacity: 0.3;
   -khtml-opacity: 0.3;
@@ -609,96 +698,6 @@
 .post .content header .socialbar-container,
 .post .content .post-content .socialbar-container {
   padding: 0 0 10px 0;
-}
-.post .content header {
-  padding-bottom: 0;
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 5px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #1abc9c;
-  color: #ffffff;
-}
-.post .content header h2 {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
-  padding-bottom: 0.625rem;
-}
-.post .content header h2 a {
-  color: #ffffff;
-}
-.post .content header h2 a:hover {
-  color: #95a5a6;
-}
-.post .content a {
-  color: #1abc9c;
-}
-.post .content a:hover {
-  color: #16a085;
-}
-.post .content .post-content {
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 0;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.post .content .comments {
-  padding: 20px;
-  padding: 1.25rem;
-}
-.post .content .read-more {
-  color: #1abc9c;
-}
-.post .content .read-more:hover {
-  color: #16a085;
-}
-.post .content .link-url {
-  margin-bottom: 22px;
-  margin-bottom: 1.375rem;
-}
-.post .content .tags h4 {
-  margin: 0;
-  margin-bottom: 8px;
-  margin-bottom: 0.5rem;
-}
-.post .content .tags a {
-  margin-right: 8px;
-  margin-right: 0.5rem;
-  padding: 3px;
-  padding: 0.1875rem;
-  background-color: #1abc9c;
-  color: #ffffff;
-}
-.post .content .tags a:hover {
-  color: #2c3e50;
-}
-.post img {
-  border-width: 3px;
-  border-width: 0.1875rem;
-  border-style: solid;
-  border-color: #ecf0f1;
-  border-radius: 5px;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
@@ -1275,7 +1274,7 @@ body {
   min-height: 100%;
 }
 body {
-  color: #1abc9c;
+  color: #187319;
   line-height: 1.625;
   font-family: 'Lato', Calibri, Arial, sans-serif;
 }
@@ -1350,7 +1349,7 @@ img {
   color: #bdc3c7;
 }
 .timeline > li .label a {
-  color: #1abc9c;
+  color: #187319;
 }
 .timeline > li .label a:hover {
   color: #16a085;
@@ -1383,6 +1382,11 @@ img {
   max-height: 42px;
   max-height: 2.625rem;
 }
+.timeline > li .label .post-header-title {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 .timeline > li .label .post-content {
   color: #34495e;
   background-color: #ecf0f1;
@@ -1411,7 +1415,7 @@ img {
   margin-right: 0.5rem;
   padding: 3px;
   padding: 0.1875rem;
-  background-color: #1abc9c;
+  background-color: #187319;
   color: #ffffff;
 }
 .timeline > li .label .tags a:hover {
