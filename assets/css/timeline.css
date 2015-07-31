@@ -75,7 +75,7 @@
   font-weight: 700;
 }
 .container > header #nav a:hover {
-  color: #16a085;
+  color: #2464a3;
 }
 .container > header #nav a.active {
   color: #34495e;
@@ -95,7 +95,7 @@
   height: 2.75rem;
   width: 44px;
   width: 2.75rem;
-  color: #34495e;
+  color: #2464a3;
   font-size: 32px;
   font-size: 2rem;
 }
@@ -324,7 +324,7 @@
 }
 .pagination .post-prev:hover,
 .pagination .post-next:hover {
-  color: #16a085;
+  color: #2464a3;
 }
 .pagination .post-prev {
   float: left;
@@ -441,7 +441,7 @@
   color: #187319;
 }
 .post .content a:hover {
-  color: #16a085;
+  color: #2464a3;
 }
 .post .content .post-content {
   -webkit-border-top-right-radius: 0;
@@ -467,7 +467,7 @@
   color: #187319;
 }
 .post .content .read-more:hover {
-  color: #16a085;
+  color: #2464a3;
 }
 .post .content .link-url {
   margin-bottom: 22px;
@@ -1362,7 +1362,7 @@ blockquote p {
   color: #187319;
 }
 .timeline > li .label a:hover {
-  color: #16a085;
+  color: #2464a3;
 }
 .timeline > li .label .post-header {
   background-color: #187319;

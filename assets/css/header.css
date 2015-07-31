@@ -75,7 +75,7 @@
   font-weight: 700;
 }
 .container > header #nav a:hover {
-  color: #16a085;
+  color: #2464a3;
 }
 .container > header #nav a.active {
   color: #34495e;
@@ -95,7 +95,7 @@
   height: 2.75rem;
   width: 44px;
   width: 2.75rem;
-  color: #34495e;
+  color: #2464a3;
   font-size: 32px;
   font-size: 2rem;
 }
