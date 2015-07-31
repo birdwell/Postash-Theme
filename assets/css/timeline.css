@@ -100,7 +100,7 @@
   font-size: 2rem;
 }
 .container > header .social-icons a:hover {
-  color: #16a085;
+  color: #187319;
 }
 .container > header .social-icons a:first-child {
   margin-left: 0;
@@ -1381,6 +1381,7 @@ img {
 .timeline > li .label .post-header .image img {
   max-height: 42px;
   max-height: 2.625rem;
+  border-radius: 4px;
 }
 .timeline > li .label .post-header-title {
   display: block;
@@ -1465,7 +1466,7 @@ img {
   bottom: 0;
   width: 10px;
   width: 0.625rem;
-  background-color: #187319;
+  background-color: rgba(61, 145, 62, 0.95);
   left: 23%;
   margin-left: -10px;
   margin-left: -0.625rem;
