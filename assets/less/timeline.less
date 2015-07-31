@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .timeline {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@
   bottom: 0;
   width: 10px;
   width: 0.625rem;
-  background-color: #bdc3c7;
+  background-color: @background-color;
   left: 23%;
   margin-left: -10px;
   margin-left: -0.625rem;
@@ -107,7 +109,7 @@
   padding: 0.625rem 1rem;
 }
 .timeline > li .label .post-header {
-  background-color: #1abc9c;
+  background-color: @background-color;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -180,7 +182,7 @@
   top: 38px;
   top: 2.375rem;
   position: absolute;
-  background-color: #1abc9c;
+  background-color: @background-color;
   z-index: 0;
   border-radius: 50%;
 }

@@ -1307,7 +1307,7 @@ img {
   bottom: 0;
   width: 10px;
   width: 0.625rem;
-  background-color: #bdc3c7;
+  background-color: #0c840d;
   left: 23%;
   margin-left: -10px;
   margin-left: -0.625rem;
@@ -1402,7 +1402,7 @@ img {
   padding: 0.625rem 1rem;
 }
 .timeline > li .label .post-header {
-  background-color: #1abc9c;
+  background-color: #0c840d;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -1475,7 +1475,8 @@ img {
   top: 38px;
   top: 2.375rem;
   position: absolute;
-  background-color: #1abc9c;
+  background-color: #0c840d;
   z-index: 0;
   border-radius: 50%;
 }
+
