@@ -102,34 +102,19 @@ body.bio .social-icons a {
   text-indent: -9999px;
 }
 body.bio .twitter {
-  background-image: url(../img/twitter.png);
+  background-image: url(../images/twitter.png);
   width: 20px;
   height: 17px;
 }
 body.bio .facebook {
-  background-image: url(../img/facebook.png);
+  background-image: url(../images/facebook.png);
   width: 10px;
-  height: 19px;
-}
-body.bio .googleplus {
-  background-image: url(../img/googleplus.png);
-  width: 21px;
-  height: 19px;
-}
-body.bio .dribbble {
-  background-image: url(../img/dribbble.png);
-  width: 21px;
   height: 19px;
 }
 body.bio .instagram {
   background-image: url(../img/instagram.png);
   width: 20px;
   height: 19px;
-}
-body.bio .flickr {
-  background-image: url(../img/flickr.png);
-  width: 20px;
-  height: 9px;
 }
 body.bio p,
 body.bio ul,
