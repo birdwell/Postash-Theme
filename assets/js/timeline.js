@@ -1,4 +1,7 @@
 path = window.location.pathname.split('/');
-if(path[path.length - 1] == 'music'){
+page = path[path.length - 1];
+if(page == 'music'){
   document.body.className = 'music';
+}else if(page == 'bio'){
+  document.body.className = 'bio';
 }

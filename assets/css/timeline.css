@@ -1,3 +1,382 @@
+@charset "utf-8";
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/* A more considered reset; more of a restart... As per: csswizardry.com/2011/10/reset-restarted */
+body.bio {
+  /*------------------------------------*\
+      $MAIN
+  \*------------------------------------*/
+  /*------------------------------------*\
+      $TYPOGRAPHY
+  \*------------------------------------*/
+  /*------------------------------------*\
+      $MISC
+  \*------------------------------------*/
+  /*
+  Animate.css - http://daneden.me/animate
+  LICENSED UNDER THE  MIT LICENSE (MIT)
+
+  Copyright (c) 2012 Dan Eden
+  */
+  /*------------------------------------*\
+      $MOBILE
+  \*------------------------------------*/
+}
+body.bio html,
+body.bio body,
+body.bio div,
+body.bio span,
+body.bio applet,
+body.bio object,
+body.bio iframe,
+body.bio h1,
+body.bio h2,
+body.bio h3,
+body.bio h4,
+body.bio h5,
+body.bio h6,
+body.bio p,
+body.bio blockquote,
+body.bio pre,
+body.bio hr,
+body.bio a,
+body.bio abbr,
+body.bio address,
+body.bio cite,
+body.bio code,
+body.bio del,
+body.bio dfn,
+body.bio em,
+body.bio img,
+body.bio ins,
+body.bio kbd,
+body.bio q,
+body.bio s,
+body.bio samp,
+body.bio small,
+body.bio strong,
+body.bio sub,
+body.bio sup,
+body.bio tt,
+body.bio var,
+body.bio b,
+body.bio u,
+body.bio i,
+body.bio dl,
+body.bio dt,
+body.bio dd,
+body.bio ol,
+body.bio ul,
+body.bio li,
+body.bio fieldset,
+body.bio form,
+body.bio label,
+body.bio legend,
+body.bio table,
+body.bio caption,
+body.bio tbody,
+body.bio tfoot,
+body.bio thead,
+body.bio tr,
+body.bio th,
+body.bio td,
+body.bio article,
+body.bio aside,
+body.bio canvas,
+body.bio details,
+body.bio figcaption,
+body.bio figure,
+body.bio footer,
+body.bio header,
+body.bio hgroup,
+body.bio menu,
+body.bio nav,
+body.bio section,
+body.bio summary,
+body.bio time,
+body.bio mark,
+body.bio audio,
+body.bio video {
+  margin: 0;
+  padding: 0;
+}
+body.bio article,
+body.bio aside,
+body.bio details,
+body.bio figcaption,
+body.bio figure,
+body.bio footer,
+body.bio header,
+body.bio hgroup,
+body.bio menu,
+body.bio nav,
+body.bio section {
+  display: block;
+}
+body.bio h1,
+body.bio h2,
+body.bio h3,
+body.bio h4,
+body.bio h5,
+body.bio h6 {
+  font-size: 100%;
+}
+body.bio table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body.bio strong,
+body.bio b,
+body.bio mark {
+  font-weight: bold;
+  font-style: inherit;
+}
+body.bio em,
+body.bio i,
+body.bio cite,
+body.bio q,
+body.bio address,
+body.bio dfn,
+body.bio var {
+  font-style: italic;
+  font-weight: inherit;
+}
+body.bio abbr[title],
+body.bio dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+body.bio ins {
+  border-bottom: 1px solid;
+}
+body.bio a,
+body.bio u,
+body.bio ins {
+  text-decoration: none;
+}
+body.bio del,
+body.bio s {
+  text-decoration: line-through;
+}
+body.bio pre,
+body.bio code,
+body.bio samp,
+body.bio kbd {
+  font-family: monospace;
+}
+body.bio small {
+  font-size: 0.75em;
+}
+body.bio img {
+  border: none;
+  font-style: italic;
+}
+body.bio input,
+body.bio select,
+body.bio option,
+body.bio optgroup,
+body.bio textarea {
+  font: inherit;
+}
+body.bio html {
+  background-color: #f6f9f9;
+  color: #95a4a9;
+  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body.bio body {
+  margin: 10%;
+}
+body.bio .avatar {
+  float: left;
+  margin: 0 40px 20px 0;
+}
+body.bio .avatar img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 125px;
+}
+body.bio .content {
+  float: left;
+  width: 300px;
+}
+body.bio .title {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1;
+}
+body.bio .social-icons li {
+  display: inline;
+}
+body.bio .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  text-indent: -9999px;
+}
+body.bio .twitter {
+  background-image: url(../img/twitter.png);
+  width: 20px;
+  height: 17px;
+}
+body.bio .facebook {
+  background-image: url(../img/facebook.png);
+  width: 10px;
+  height: 19px;
+}
+body.bio .googleplus {
+  background-image: url(../img/googleplus.png);
+  width: 21px;
+  height: 19px;
+}
+body.bio .dribbble {
+  background-image: url(../img/dribbble.png);
+  width: 21px;
+  height: 19px;
+}
+body.bio .instagram {
+  background-image: url(../img/instagram.png);
+  width: 20px;
+  height: 19px;
+}
+body.bio .flickr {
+  background-image: url(../img/flickr.png);
+  width: 20px;
+  height: 9px;
+}
+body.bio p,
+body.bio ul,
+body.bio ol,
+body.bio dl,
+body.bio .title {
+  margin-bottom: 20px;
+}
+body.bio p {
+  font-weight: bold;
+}
+body.bio ul,
+body.bio ol,
+body.bio dl {
+  list-style-type: none;
+}
+body.bio a {
+  color: #339999;
+  font-weight: bold;
+}
+body.bio a:hover,
+body.bio a:focus {
+  color: #95a4a9;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+body.bio a img:hover,
+body.bio .social-icons a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+  opacity: 0.85;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+body.bio .animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+body.bio .animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+}
+@-webkit-keyframes bounceInDown {
+  0% {
+    -webkit-transform: translateY(-2000px);
+  }
+  60% {
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@-moz-keyframes bounceInDown {
+  0% {
+    -moz-transform: translateY(-2000px);
+  }
+  60% {
+    -moz-transform: translateY(30px);
+  }
+  80% {
+    -moz-transform: translateY(-10px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-o-keyframes bounceInDown {
+  0% {
+    -o-transform: translateY(-2000px);
+  }
+  60% {
+    -o-transform: translateY(30px);
+  }
+  80% {
+    -o-transform: translateY(-10px);
+  }
+  100% {
+    -o-transform: translateY(0);
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    transform: translateY(-2000px);
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+body.bio .bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  -moz-animation-name: bounceInDown;
+  -o-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+@media handheld, only screen and (max-width: 720px) {
+  body.bio .avatar,
+  body.bio .content {
+    float: none;
+  }
+  body.bio .avatar img {
+    max-width: 125px;
+    max-height: 125px;
+  }
+  body.bio .content {
+    width: 100%;
+  }
+}
+
 .main,
 .container > header,
 .container > footer {
