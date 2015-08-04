@@ -280,6 +280,13 @@
   }
 }
 
+body.music header h1 {
+  text-align: center;
+}
+body.music .post .content:before {
+  display: none;
+}
+
 .pagination {
   width: 100%;
   height: 30px;
