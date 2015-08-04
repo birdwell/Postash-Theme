@@ -1,142 +1,90 @@
 @charset "utf-8";
 /*------------------------------------*\
-    $RESET
+$RESET
 \*------------------------------------*/
 /* A more considered reset; more of a restart... As per: csswizardry.com/2011/10/reset-restarted */
-body.bio {
+div.bio {
+  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*------------------------------------*\
-      $MAIN
+  $MAIN
   \*------------------------------------*/
   /*------------------------------------*\
-      $TYPOGRAPHY
+  $TYPOGRAPHY
   \*------------------------------------*/
   /*------------------------------------*\
-      $MISC
+  $MISC
   \*------------------------------------*/
   /*------------------------------------*\
-      $MOBILE
+  $MOBILE
   \*------------------------------------*/
 }
-body.bio table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-body.bio strong,
-body.bio b,
-body.bio mark {
-  font-weight: bold;
-  font-style: inherit;
-}
-body.bio em,
-body.bio i,
-body.bio cite,
-body.bio q,
-body.bio address,
-body.bio dfn,
-body.bio var {
-  font-style: italic;
-  font-weight: inherit;
-}
-body.bio abbr[title],
-body.bio dfn[title] {
+div.bio abbr[title],
+div.bio dfn[title] {
   cursor: help;
   border-bottom: 1px dotted;
 }
-body.bio ins {
-  border-bottom: 1px solid;
-}
-body.bio a,
-body.bio u,
-body.bio ins {
-  text-decoration: none;
-}
-body.bio del,
-body.bio s {
-  text-decoration: line-through;
-}
-body.bio pre,
-body.bio code,
-body.bio samp,
-body.bio kbd {
-  font-family: monospace;
-}
-body.bio small {
-  font-size: 0.75em;
-}
-body.bio img {
+div.bio img {
   border: none;
   font-style: italic;
 }
-body.bio input,
-body.bio select,
-body.bio option,
-body.bio optgroup,
-body.bio textarea {
-  font: inherit;
-}
-body.bio html {
-  background-color: #f6f9f9;
-  color: #95a4a9;
-  font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-body.bio .avatar {
+div.bio .avatar {
   float: left;
   margin: 0 40px 20px 0;
 }
-body.bio .avatar img {
+div.bio .avatar img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 125px;
 }
-body.bio .title {
+div.bio .title {
   font-size: 48px;
   font-weight: normal;
   line-height: 1;
 }
-body.bio .social-icons li {
+div.bio .social-icons li {
   display: inline;
 }
-body.bio .social-icons a {
+div.bio .social-icons a {
   display: inline-block;
   margin-right: 10px;
   text-indent: -9999px;
 }
-body.bio .twitter {
+div.bio .twitter {
   background-image: url(../images/twitter.png);
   width: 20px;
   height: 17px;
 }
-body.bio .facebook {
+div.bio .facebook {
   background-image: url(../images/facebook.png);
   width: 10px;
   height: 19px;
 }
-body.bio .instagram {
+div.bio .instagram {
   background-image: url(../img/instagram.png);
   width: 20px;
   height: 19px;
 }
-body.bio p,
-body.bio ul,
-body.bio ol,
-body.bio dl,
-body.bio .title {
+div.bio p,
+div.bio ul,
+div.bio ol,
+div.bio dl,
+div.bio .title {
   margin-bottom: 20px;
 }
-body.bio p {
+div.bio p {
   font-weight: bold;
 }
-body.bio ul,
-body.bio ol,
-body.bio dl {
+div.bio ul,
+div.bio ol,
+div.bio dl {
   list-style-type: none;
 }
-body.bio a {
+div.bio a {
   color: #339999;
   font-weight: bold;
 }
-body.bio a:hover,
-body.bio a:focus {
+div.bio a:hover,
+div.bio a:focus {
   color: #95a4a9;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
@@ -144,8 +92,8 @@ body.bio a:focus {
   -ms-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-body.bio a img:hover,
-body.bio .social-icons a:hover {
+div.bio a img:hover,
+div.bio .social-icons a:hover {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
   filter: alpha(opacity=85);
   opacity: 0.85;
@@ -156,15 +104,15 @@ body.bio .social-icons a:hover {
   transition: opacity 0.2s ease;
 }
 @media handheld, only screen and (max-width: 720px) {
-  body.bio .avatar,
-  body.bio .content {
+  div.bio .avatar,
+  div.bio .content {
     float: none;
   }
-  body.bio .avatar img {
+  div.bio .avatar img {
     max-width: 125px;
     max-height: 125px;
   }
-  body.bio .content {
+  div.bio .content {
     width: 100%;
   }
 }
