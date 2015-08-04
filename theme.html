@@ -60,7 +60,6 @@
                         {% for page in pages %}
                         <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
                         {% endfor %}
-                        <li><a href="#bio">Bio</a></li>
                         {% endif %}
 
                     </ul>
@@ -207,34 +206,6 @@
             </article>
             {% endif %}
         </div>
-        {% if is_home %}
-        <div class="bio">
-          <div class="avatar">
-            <img src="../images/avatar.png" alt="Avatar">
-          </div>
-
-          <div class="content">
-            <h1 class="title">Josh<br>Birdwell</h1>
-
-            <p>
-            Put your short bio here.<br>
-            Put where you're from here.
-            </p>
-
-            <ul class="social-icons">
-              <li><a class="twitter" href="#" title="Twitter">Twitter</a></li>
-              <li><a class="facebook" href="#" title="Facebook">Facebook</a></li>
-              <li><a class="instagram" href="#" title="Instagram">Instagram</a></li>
-            </ul>
-
-            <p>
-            Web Developer Intern at NextThought<br>
-            </p>
-
-            <p>Want to send me a love letter? <a href="#">Email me</a>.</p>
-          </div>
-        </div>
-        {% endif %}
         <footer>
             <p class="left">All rights Reserved &copy; <a href="/">{{ site.name }}</a></p>
             <p class="right">Powered by <a href="http://postach.io" target="_blank">Postach.io</a></p>
