@@ -5,6 +5,12 @@ $RESET
 /* A more considered reset; more of a restart... As per: csswizardry.com/2011/10/reset-restarted */
 div.bio {
   font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  max-width: 960px;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 30px;
+  color: #95a4a9;
   /*------------------------------------*\
   $MAIN
   \*------------------------------------*/
