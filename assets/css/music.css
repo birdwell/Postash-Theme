@@ -4,3 +4,8 @@ body.music header h1 {
 body.music .post .content:before {
   display: none;
 }
+body.music nav#nav li:last-child {
+  border: 2px solid #187319;
+  border-radius: 6px;
+  padding: 10px;
+}
