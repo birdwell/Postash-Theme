@@ -13,114 +13,9 @@ body.bio {
   /*------------------------------------*\
       $MISC
   \*------------------------------------*/
-  /*
-  Animate.css - http://daneden.me/animate
-  LICENSED UNDER THE  MIT LICENSE (MIT)
-
-  Copyright (c) 2012 Dan Eden
-  */
   /*------------------------------------*\
       $MOBILE
   \*------------------------------------*/
-}
-body.bio html,
-body.bio body,
-body.bio div,
-body.bio span,
-body.bio applet,
-body.bio object,
-body.bio iframe,
-body.bio h1,
-body.bio h2,
-body.bio h3,
-body.bio h4,
-body.bio h5,
-body.bio h6,
-body.bio p,
-body.bio blockquote,
-body.bio pre,
-body.bio hr,
-body.bio a,
-body.bio abbr,
-body.bio address,
-body.bio cite,
-body.bio code,
-body.bio del,
-body.bio dfn,
-body.bio em,
-body.bio img,
-body.bio ins,
-body.bio kbd,
-body.bio q,
-body.bio s,
-body.bio samp,
-body.bio small,
-body.bio strong,
-body.bio sub,
-body.bio sup,
-body.bio tt,
-body.bio var,
-body.bio b,
-body.bio u,
-body.bio i,
-body.bio dl,
-body.bio dt,
-body.bio dd,
-body.bio ol,
-body.bio ul,
-body.bio li,
-body.bio fieldset,
-body.bio form,
-body.bio label,
-body.bio legend,
-body.bio table,
-body.bio caption,
-body.bio tbody,
-body.bio tfoot,
-body.bio thead,
-body.bio tr,
-body.bio th,
-body.bio td,
-body.bio article,
-body.bio aside,
-body.bio canvas,
-body.bio details,
-body.bio figcaption,
-body.bio figure,
-body.bio footer,
-body.bio header,
-body.bio hgroup,
-body.bio menu,
-body.bio nav,
-body.bio section,
-body.bio summary,
-body.bio time,
-body.bio mark,
-body.bio audio,
-body.bio video {
-  margin: 0;
-  padding: 0;
-}
-body.bio article,
-body.bio aside,
-body.bio details,
-body.bio figcaption,
-body.bio figure,
-body.bio footer,
-body.bio header,
-body.bio hgroup,
-body.bio menu,
-body.bio nav,
-body.bio section {
-  display: block;
-}
-body.bio h1,
-body.bio h2,
-body.bio h3,
-body.bio h4,
-body.bio h5,
-body.bio h6 {
-  font-size: 100%;
 }
 body.bio table {
   border-collapse: collapse;
@@ -184,9 +79,6 @@ body.bio html {
   color: #95a4a9;
   font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body.bio body {
-  margin: 10%;
-}
 body.bio .avatar {
   float: left;
   margin: 0 40px 20px 0;
@@ -195,10 +87,6 @@ body.bio .avatar img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 125px;
-}
-body.bio .content {
-  float: left;
-  width: 300px;
 }
 body.bio .title {
   font-size: 48px;
@@ -281,87 +169,6 @@ body.bio .social-icons a:hover {
   -o-transition: opacity 0.2s ease;
   -ms-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
-}
-body.bio .animated {
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-}
-body.bio .animated.hinge {
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -ms-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-}
-@-webkit-keyframes bounceInDown {
-  0% {
-    -webkit-transform: translateY(-2000px);
-  }
-  60% {
-    -webkit-transform: translateY(30px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-  }
-}
-@-moz-keyframes bounceInDown {
-  0% {
-    -moz-transform: translateY(-2000px);
-  }
-  60% {
-    -moz-transform: translateY(30px);
-  }
-  80% {
-    -moz-transform: translateY(-10px);
-  }
-  100% {
-    -moz-transform: translateY(0);
-  }
-}
-@-o-keyframes bounceInDown {
-  0% {
-    -o-transform: translateY(-2000px);
-  }
-  60% {
-    -o-transform: translateY(30px);
-  }
-  80% {
-    -o-transform: translateY(-10px);
-  }
-  100% {
-    -o-transform: translateY(0);
-  }
-}
-@keyframes bounceInDown {
-  0% {
-    transform: translateY(-2000px);
-  }
-  60% {
-    transform: translateY(30px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-body.bio .bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  -moz-animation-name: bounceInDown;
-  -o-animation-name: bounceInDown;
-  animation-name: bounceInDown;
 }
 @media handheld, only screen and (max-width: 720px) {
   body.bio .avatar,
