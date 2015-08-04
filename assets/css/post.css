@@ -52,6 +52,9 @@
   padding: 0;
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 30px;
 }
 .post .content header h2 a {
   color: #ffffff;

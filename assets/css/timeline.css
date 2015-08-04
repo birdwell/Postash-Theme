@@ -430,6 +430,9 @@
   padding: 0;
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 30px;
 }
 .post .content header h2 a {
   color: #ffffff;
@@ -1279,7 +1282,7 @@ body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 a {
-  color: #f0f0f0;
+  color: #6E6B6B;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1397,6 +1400,9 @@ blockquote p {
   display: block;
   height: 100%;
   width: 100%;
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 30px;
 }
 .timeline > li .label .post-content {
   color: #34495e;
@@ -1432,23 +1438,25 @@ blockquote p {
 .timeline > li .label .tags a:hover {
   color: #2c3e50;
 }
-.timeline > li .label:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 14px;
-  border-width: 0.875rem;
-  border-style: solid;
-  border-color: transparent;
-  border-top-color: transparent;
-  border-right-color: #187319;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  top: 20px;
-  top: 1.25rem;
-  right: 100%;
-  pointer-events: none;
+@media only screen and (min-device-width: 480px) {
+  .timeline > li .label:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 14px;
+    border-width: 0.875rem;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: transparent;
+    border-right-color: #187319;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    top: 20px;
+    top: 1.25rem;
+    right: 100%;
+    pointer-events: none;
+  }
 }
 .timeline > li .bubble {
   height: 24px;

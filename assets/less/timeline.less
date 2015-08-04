@@ -133,22 +133,25 @@
             }
         }
         .label:before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-width: 14px;
-            border-width: 0.875rem;
-            border-style: solid;
-            border-color: transparent;
-            border-top-color: transparent;
-            border-right-color: @background-color;
-            border-bottom-color: transparent;
-            border-left-color: transparent;
-            top: 20px;
-            top: 1.25rem;
-            right: 100%;
-            pointer-events: none;
+            // Only on laptops and tablets
+            @media only screen and (min-device-width: 480px){
+              content: '';
+              position: absolute;
+              width: 0;
+              height: 0;
+              border-width: 14px;
+              border-width: 0.875rem;
+              border-style: solid;
+              border-color: transparent;
+              border-top-color: transparent;
+              border-right-color: @background-color;
+              border-bottom-color: transparent;
+              border-left-color: transparent;
+              top: 20px;
+              top: 1.25rem;
+              right: 100%;
+              pointer-events: none;
+            }
         }
         .bubble {
             height: 24px;
