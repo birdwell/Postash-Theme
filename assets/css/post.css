@@ -8,6 +8,11 @@
   left: 25px;
   bottom: 25px;
 }
+@media all and (max-width: 680px) {
+  .post .time {
+    bottom: 0px;
+  }
+}
 .post .time span {
   display: block;
 }

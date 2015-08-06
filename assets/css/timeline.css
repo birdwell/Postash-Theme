@@ -408,6 +408,11 @@ body.music nav#nav li:last-child {
   left: 25px;
   bottom: 25px;
 }
+@media all and (max-width: 680px) {
+  .post .time {
+    bottom: 0px;
+  }
+}
 .post .time span {
   display: block;
 }
@@ -853,10 +858,7 @@ body.music nav#nav li:last-child {
     width: 1.6rem;
   }
   .icon-button:hover span {
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 1.6rem;
-    margin: -0.8rem;
+    display: none;
   }
   /* Icons */
   .icon-button i {

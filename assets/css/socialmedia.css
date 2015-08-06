@@ -123,10 +123,7 @@
     width: 1.6rem;
   }
   .icon-button:hover span {
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 1.6rem;
-    margin: -0.8rem;
+    display: none;
   }
   /* Icons */
   .icon-button i {
