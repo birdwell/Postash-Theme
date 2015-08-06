@@ -1,12 +1,11 @@
 .profile-img {
-  display: block;
-  height: 7em;
-  margin-right: auto;
-  margin-left: auto;
-  border: .5em solid #f2f2f2;
-  border-radius: 100%;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  background-image: url("../images/avatar.png");
+  height: 6em;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+  -webkit-border-radius: 50% !important;
+  border: none !important;
+  position: relative;
+  left: 17px;
 }
 
 .main,
@@ -400,11 +399,14 @@ body.music nav#nav li:last-child {
 }
 
 .post .time {
-  display: block;
+  display: inline-block;
   padding-right: 100px;
   padding-right: 6.25rem;
   margin-bottom: 22px;
   margin-bottom: 1.375rem;
+  position: relative;
+  left: 25px;
+  bottom: 25px;
 }
 .post .time span {
   display: block;
