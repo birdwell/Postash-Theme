@@ -807,6 +807,9 @@ body.music nav#nav li:last-child {
 .pinterest span {
   background-color: #cb2027;
 }
+.rss span {
+  background-color: #F60;
+}
 .icon-button .icon-twitter {
   color: #4099ff;
 }
@@ -828,13 +831,17 @@ body.music nav#nav li:last-child {
 .icon-button .fa-pinterest {
   color: #cb2027;
 }
+.icon-button .icon-rss {
+  color: #F60;
+}
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
 .icon-button:hover .icon-google-plus,
 .icon-button:hover .fa-tumblr,
 .icon-button:hover .fa-instagram,
 .icon-button:hover .fa-youtube,
-.icon-button:hover .fa-pinterest {
+.icon-button:hover .fa-pinterest,
+.icon-button:hover .icon-rss {
   color: white;
 }
 @media all and (max-width: 680px) {
@@ -856,12 +863,6 @@ body.music nav#nav li:last-child {
     height: 1.6rem;
     line-height: 1.6rem;
     width: 1.6rem;
-  }
-  body {
-    padding: 10px;
-  }
-  .pinterest {
-    display: none;
   }
 }
 
