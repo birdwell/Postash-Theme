@@ -1,14 +1,14 @@
-body.music header h1 {
+body.music .container header h1 {
   text-align: center;
 }
-body.music .post .content:before {
+body.music .container .post .content:before {
   display: none;
 }
-body.music nav#nav li:last-child {
+body.music .container nav#nav li:last-child {
   border: 2px solid #187319;
   border-radius: 6px;
   background-color: #187319;
 }
-body.music nav#nav li:last-child a {
+body.music .container nav#nav li:last-child a {
   color: white;
 }
