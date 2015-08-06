@@ -126,6 +126,7 @@
             </div>
             {% elif is_post %}
             <article itemscope itemtype="http://schema.org/Article" class="post">
+                <img class="profile-img"/>
                 <time class="time" datetime="{{ post.created_at }}"><span>Published by {{ site.author }}</span> <span>{{ post.created_at|format_date }}</span></time>
                 <section class="content">
                     <header>
