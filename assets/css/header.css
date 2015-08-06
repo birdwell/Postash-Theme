@@ -82,6 +82,7 @@
   display: inherit;
   color: #187319;
   font-weight: 700;
+  transition: all 1s ease;
 }
 .container > header #nav a:hover {
   color: #2464a3;
