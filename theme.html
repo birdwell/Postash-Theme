@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{ static('fonts/symbolset/ss-social-circle.css') }}">
     <link href="{{ assets('css/timeline.css') }}" rel="stylesheet" />
     <link rel="SHORTCUT ICON" href="http://s22.postimg.org/rmuwpc8cd/favicon.png"/>
+    <link rel="stylesheet prefetch" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
     <!-- standard google analytics -->
     <script>
@@ -70,6 +71,8 @@
                 {% if site.facebook %}<a href="{{ site.facebook }}" title="Facebook" target="_blank" class="ss-icon">facebook</a>{% endif %}
                 {% if site.googleplus %}<a href="{{ site.googleplus }}?rel=author?rel=author" rel="author" title="Google+" target="_blank" class="ss-icon">googleplus</a>{% endif %}
                 {% if site.linkedin %}<a href="{{ site.linkedin }}" title="Linkedin" target="_blank" class="ss-icon">linkedin</a>{% endif %}
+                <a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+                <a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
                 <a href="{{ site.atom_url }}" title="RSS" target="_blank" class="ss-icon">rss</a>
             </div>
         </header>
