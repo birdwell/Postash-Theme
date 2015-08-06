@@ -738,7 +738,7 @@ body.music nav#nav li:last-child {
   cursor: pointer;
   display: inline-block !important;
   font-size: 31.2000007629395px !important;
-  height: 62.390625px;
+  height: 62.390625px !important;
   line-height: 62.4000015258789px !important;
   margin: 0 5px;
   position: relative;
