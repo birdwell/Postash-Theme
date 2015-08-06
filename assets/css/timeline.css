@@ -857,6 +857,12 @@ body.music nav#nav li:last-child {
     line-height: 1.6rem;
     width: 1.6rem;
   }
+  .socialMedia {
+    text-align: center;
+    position: relative;
+    left: 20px;
+    float: none;
+  }
   .icon-button:hover span {
     display: none;
   }
