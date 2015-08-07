@@ -7,6 +7,69 @@
   position: relative;
   left: 17px;
 }
+.bio {
+  position: relative;
+  left: 16em;
+  width: 80%;
+  height: 156px;
+  margin: auto;
+  padding: 1px;
+}
+.bio .hero-avatar.js-profileAvatar {
+  z-index: 500;
+  position: relative;
+  border-radius: 100%;
+  width: 10%;
+  float: left;
+}
+.bio .hero--profile .hero-avatar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+  border-radius: 100%;
+  pointer-events: none;
+}
+.bio img.avatar-image.avatar-image--large.imagePicker-target {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+.bio h1.hero-title {
+  font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  margin-left: 0.5px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 8px;
+  outline: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.bio p.hero-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  outline: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+  letter-spacing: -0.02em;
+  margin-left: 25px;
+}
+.bio .profileInfo {
+  margin-left: 15%;
+  position: relative;
+  bottom: 20px;
+}
 
 .main,
 .container > header,
