@@ -118,6 +118,7 @@
   border-radius: 4px;
   font-size: .85em;
   transition: all 1s ease;
+  margin-right: .85em;
 }
 .post .content .tags a:hover {
   color: #187319;
