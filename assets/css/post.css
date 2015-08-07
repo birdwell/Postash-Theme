@@ -112,15 +112,17 @@
   margin-bottom: 0.5rem;
 }
 .post .content .tags a {
-  margin-right: 8px;
-  margin-right: 0.5rem;
-  padding: 3px;
-  padding: 0.1875rem;
+  padding: 0.386rem;
   background-color: #187319;
   color: #ffffff;
+  border-radius: 4px;
+  font-size: .85em;
+  transition: all 1s ease;
 }
 .post .content .tags a:hover {
-  color: #2c3e50;
+  color: #187319;
+  background-color: white;
+  border: 1px solid #187319;
 }
 .post .content:before {
   content: '';
