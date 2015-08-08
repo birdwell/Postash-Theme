@@ -209,7 +209,7 @@
             </article>
             {% endif %}
         </div>
-
+        {% if is_page %}
         <div class="bio">
           <div class="hero-avatar js-profileAvatar">
             <div class="avatar">
@@ -223,7 +223,7 @@
               <p class="hero-description">Passionate. Driven. Determined.</p>
           </div>
         </div>
-
+      {% end_if %}
         <footer>
             <p class="left">All rights Reserved &copy; <a href="/">{{ site.name }}</a></p>
         </footer>
