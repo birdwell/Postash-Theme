@@ -7,6 +7,33 @@
   position: relative;
   left: 17px;
 }
+@media all and (max-width: 680px) {
+  .bio {
+    left: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+  img.avatar-image.avatar-image--large.imagePicker-target {
+    width: 80px;
+    height: 80px;
+  }
+  .hero-avatar.js-profileAvatar {
+    width: 40px;
+  }
+  h1.hero-title {
+    font-size: 35px;
+  }
+  p.hero-description {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+  .profileInfo {
+    margin-left: 35%;
+    width: 100%;
+  }
+}
 .bio {
   position: relative;
   left: 16em;

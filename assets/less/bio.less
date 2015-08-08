@@ -8,6 +8,37 @@
   left: 17px;
 }
 
+@media all and (max-width: 680px) {
+    .bio{
+      left: 0em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+
+    img.avatar-image.avatar-image--large.imagePicker-target {
+      width: 80px;
+      height: 80px;
+    }
+    .hero-avatar.js-profileAvatar{
+      width: 40px;
+    }
+
+    h1.hero-title{
+      font-size: 35px;
+    }
+
+    p.hero-description{
+      font-size: 16px;
+      margin-left: 2px;
+    }
+
+    .profileInfo{
+        margin-left: 35%;
+        width: 100%;
+    }
+}
 
 
 .bio {
@@ -19,61 +50,61 @@
     padding: 1px;
 }
 
-    .hero-avatar.js-profileAvatar {
-        z-index: 500;
-        position: relative;
-        border-radius: 100%;
-        width: 10%;
-        float: left;
-    }
-    .hero--profile .hero-avatar:before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: transparent;
-        box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
-        border-radius: 100%;
-        pointer-events: none;
-    }
+.hero-avatar.js-profileAvatar {
+    z-index: 500;
+    position: relative;
+    border-radius: 100%;
+    width: 10%;
+    float: left;
+}
+.hero--profile .hero-avatar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+    border-radius: 100%;
+    pointer-events: none;
+}
 
-    img.avatar-image.avatar-image--large.imagePicker-target {
-        width: 120px;
-        height: 120px;
-        display: inline-block;
-        vertical-align: middle;
-        border-radius: 100%;
-    }
+img.avatar-image.avatar-image--large.imagePicker-target {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+}
 
-    h1.hero-title {
-        font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-        letter-spacing: -0.02em;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 50px;
-        margin-left: 0.5px;
-        letter-spacing: -0.04em;
-        line-height: 1;
-        color: rgba(0,0,0,0.8);
-        margin-bottom: 8px;
-        outline: 0;
-        word-break: break-word;
-        word-wrap: break-word;
-    }
+h1.hero-title {
+    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 0.5px;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: rgba(0,0,0,0.8);
+    margin-bottom: 8px;
+    outline: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+}
 
-    p.hero-description {
-        color: rgba(0,0,0,0.6);
-        font-size: 18px;
-        outline: 0;
-        word-break: break-word;
-        word-wrap: break-word;
-        letter-spacing: -0.02em;
-        margin-left: 25px;
-    }
-    .profileInfo {
-        margin-left: 15%;
-        position: relative;
-        bottom: 20px;
-    }
+p.hero-description {
+    color: rgba(0,0,0,0.6);
+    font-size: 18px;
+    outline: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+    letter-spacing: -0.02em;
+    margin-left: 25px;
+}
+.profileInfo {
+    margin-left: 15%;
+    position: relative;
+    bottom: 20px;
+}
